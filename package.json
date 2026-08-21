@@ -14,6 +14,20 @@
     "test": "node --test *.test.js"
   },
   "dsh": {
+    "host": {
+      "inject": [
+        "agents",
+        "sessions",
+        "permissionPresets",
+        "sessionQuery",
+        "webServer",
+        "agentPresets",
+        "llm",
+        "workspaceRegistry",
+        "sessionTitles",
+        "goals"
+      ]
+    },
     "client": {
       "inject": [
         "@deepseek-ai/dsh-client-runtime",

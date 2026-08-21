@@ -1,4 +1,4 @@
-import { defineTool } from "/Applications/DSH Desktop.app/Contents/Resources/app.asar.unpacked/node_modules/@deepseek-ai/dsh-tools/lib/index.js";
+import { defineTool } from "@deepseek-ai/dsh-tools";
 
 function requireAgent(exec) {
   if (!exec.agent) throw new Error("检查点工具需要调用方智能体");

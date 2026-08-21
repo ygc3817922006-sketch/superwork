@@ -1,5 +1,5 @@
 // 合同 / 证据 / 升级 五个模型工具。由 tool.js 统一注册。
-import { defineTool } from "/Applications/DSH Desktop.app/Contents/Resources/app.asar.unpacked/node_modules/@deepseek-ai/dsh-tools/lib/index.js";
+import { defineTool } from "@deepseek-ai/dsh-tools";
 import { ESCALATION_NEEDS, EVIDENCE_KINDS, plain } from "./contracts.js";
 
 function requireAgent(exec) {

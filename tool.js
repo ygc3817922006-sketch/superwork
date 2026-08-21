@@ -1,4 +1,4 @@
-import { defineTool } from "/Applications/DSH Desktop.app/Contents/Resources/app.asar.unpacked/node_modules/@deepseek-ai/dsh-tools/lib/index.js";
+import { defineTool } from "@deepseek-ai/dsh-tools";
 import { PERMISSION_TEMPLATES } from "./logic.js";
 import { registerContractTools, CONTRACT_PROMPT } from "./tool-contracts.js";
 import { registerCheckpointTools, CHECKPOINT_PROMPT } from "./tool-checkpoints.js";

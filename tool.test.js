@@ -44,7 +44,7 @@ test("profile node_modules must not shadow core dsh runtime packages", async () 
 // 机器门：插件事件类型必须登记进 DSH 会话词汇表，否则重启后所有线程会话历史拒载。
 test("company-thread event types are registered in the session vocabulary", async () => {
   const { COMPANY_EVENT_TYPES } = await import("./index.js");
-  const { KNOWN_SESSION_EVENT_TYPES } = await import("/Applications/DSH Desktop.app/Contents/Resources/app.asar.unpacked/node_modules/@deepseek-ai/dsh-session/lib/index.js");
+  const { KNOWN_SESSION_EVENT_TYPES } = await import("@deepseek-ai/dsh-session");
   const missing = COMPANY_EVENT_TYPES.filter((t) => !KNOWN_SESSION_EVENT_TYPES.has(t));
   assert.deepEqual(missing, [], "未登记的事件类型：" + missing.join(", "));
   assert.ok(COMPANY_EVENT_TYPES.length >= 10);
