@@ -3,8 +3,8 @@ import { createReadStream } from "node:fs";
 import { threadTitle } from "./naming.js";
 import { createPlacement } from "./placement.js";
 import { realpathSync, statSync } from "node:fs";
-import { SessionId } from "/Applications/DSH Desktop.app/Contents/Resources/app.asar.unpacked/node_modules/@deepseek-ai/dsh-session/lib/index.js";
-import { createUserMessage } from "/Applications/DSH Desktop.app/Contents/Resources/app.asar.unpacked/node_modules/@deepseek-ai/dsh-llm/lib/index.js";
+import { SessionId } from "@deepseek-ai/dsh-session";
+import { createUserMessage } from "@deepseek-ai/dsh-llm";
 import {
   CompanyThreadError,
   DEFAULT_MAX_GOAL_ROUNDS,

@@ -15,7 +15,7 @@ export const COMPANY_EVENT_TYPES = [
     "company-thread/checkpoint", "company-thread/label",
 ];
 try {
-  const { KNOWN_SESSION_EVENT_TYPES } = await import("/Applications/DSH Desktop.app/Contents/Resources/app.asar.unpacked/node_modules/@deepseek-ai/dsh-session/lib/index.js");
+  const { KNOWN_SESSION_EVENT_TYPES } = await import("@deepseek-ai/dsh-session");
   for (const type of COMPANY_EVENT_TYPES) KNOWN_SESSION_EVENT_TYPES.add(type);
 } catch {
   // app 路径不存在（如他人部署）时跳过；届时需在部署侧登记这些事件类型，否则冷读会拒载。
